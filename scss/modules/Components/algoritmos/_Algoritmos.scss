@@ -1,0 +1,75 @@
+.algorithms{
+    h1{
+        color: $second-Color;
+        margin: 40px 0 80px 0;
+        text-decoration: underline;
+    }
+
+&__content{
+    overflow: hidden;
+}
+
+&__btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #ddd;
+    }
+
+    &.active{
+        background-color: #666;
+        color: white;
+    }
+}
+
+#myBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+&__block{
+
+    margin-top: 60px;
+
+    &__article{
+        display: none;
+        border-bottom: 1px solid $second-Color;
+
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    &__info{
+        margin-bottom: 50px;
+        h2{
+            color: $first-Color;
+            text-align: center;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 1000px;
+            margin: 0 auto;
+            color: $text-Popular;
+        }
+        p{
+            margin-top: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
+
+}

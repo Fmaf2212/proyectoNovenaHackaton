@@ -1,0 +1,15 @@
+.header{
+    padding: 22px 0;
+    background-color: $second-Color;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;    
+    }
+
+    &__img{
+        width: 7%;
+    }
+
+   
+}

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <style>
+
+        .algorithms__block__article {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+        #myBtnContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content content">
+            <img class="header__img" src="img/algoritmos.png" alt="">
+        </div>
+    </header>
+
+    <div class="algorithms">
+        <div class="algorithms__content content">
+            <h1 style="text-align: center;">ALGORITMOS</h1>
+
+            <div id="myBtnContainer">
+                <button class="algorithms__btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio1°')"> Ejercicio 1</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio2')"> Ejercicio 2</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio3')"> Ejercicio 3</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio4')"> Ejercicio 4</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio5')"> Ejercicio 5</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio6')"> Ejercicio 6</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio7')"> Ejercicio 7</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio8')"> Ejercicio 8</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio9')"> Ejercicio 9</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio10')"> Ejercicio 10</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio11')"> Ejercicio 11</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio12')"> Ejercicio 12</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio13')"> Ejercicio 13</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio14')"> Ejercicio 14</button>
+                <button class="algorithms__btn" onclick="filterSelection('ejercicio15')"> Ejercicio 15</button>
+            </div>
+
+            <div class="algorithms__block">
+                <article class="algorithms__block__article ejercicio1°">
+                    <div class="algorithms__block__info">
+                        <h2>Implementar un algoritmo que reciba 2 argumentos y los sume, el resultado se deberá imprimir
+                            en pantalla</h2>
+                        <div>
+                            <br>
+                                function calcularSuma(num1,num2){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let suma;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;suma=num1+num2;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`La suma de ${num1} + ${num2} nos da ${suma}.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularSuma(10,20);
+                        </div>
+                        <p>CONSOLA: La suma de 10 + 20 nos da 30.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio2">
+                    <div class="algorithms__block__info">
+                        <h2>Un estudiante realiza 4 exámenes, calcular el promedio de estos </h2>
+                        <div>
+                            <br>
+                            function calcularPromedio(nota1,nota2,nota3,nota4){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let promedio;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;promedio=(nota1+nota2+nota3+nota4)/calcularPromedio.length;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El promedio de las notas ${nota1}, ${nota2}, ${nota3}, ${nota4} es ${promedio}.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularPromedio(10,20,15,14);
+                        </div>
+                        <p>CONSOLA: El promedio de las notas 10, 20, 15, 14 es 14.75.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio3">
+                    <div class="algorithms__block__info">
+                        <h2>Calcular el área de un rectángulo </h2>
+                        <div>
+                            <br>
+                            function calcularAreaRectangulo(base,altura){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let area;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;area=base*altura;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El area del rectángulo con base ${base} y altura ${altura} es ${area}.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularAreaRectangulo(10,20);
+                        </div>
+                        <p>CONSOLA: El area del rectángulo con base 10 y altura 20 es 200.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio4">
+                    <div class="algorithms__block__info">
+                        <h2>Calcular el área de un triángulo </h2>
+                        <div>
+                            <br>
+                            function calcularAreaTriangulo(base,altura){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let area;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;area=(base*altura)/2;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El area del triángulo con base ${base} y altura ${altura} es ${area}.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularAreaTriangulo(10,20);
+                        </div>
+                        <p>CONSOLA: El area del triángulo con base 30 y altura 20 es 150.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio5">
+                    <div class="algorithms__block__info">
+                        <h2>Calcular el área de una circunferencia </h2>
+                        <div>
+                            <br>
+                            function calcularAreaCir(diametro){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;const pi = 3.14;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let area;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;area=diametro*pi;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El area de la circunferencia con diametro ${diametro} es ${area.toFixed(2)}.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularAreaCir(10);
+                        </div>
+                        <p>CONSOLA: El area de la circunferencia con diametro 10 es 31.40.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio6">
+                    <div class="algorithms__block__info">
+                        <h2>Determinar el sueldo semanal de un trabajador basándose en sus horas trabajadas y su salario
+                            de hora hombre</h2>
+                        <div>
+                            <br>
+                            function calcularSueldoSemanal(horasTrabajadas, salarioPorHora){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;const diasDeTrabajoSemanal  = 6;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let sueldoSemanal;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;sueldoSemanal=horasTrabajadas*salarioPorHora*diasDeTrabajoSemanal;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El sueldo semanal de un trabajandor laborando ${diasDeTrabajoSemanal} días al semana, con una paga de $${salarioPorHora} por ${horasTrabajadas} horas trabajadas, es de $${sueldoSemanal}.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularSueldoSemanal(8, 20);
+                        </div>
+                        <p>CONSOLA: El sueldo semanal de un trabajandor laborando 6 días a la semana, con una paga de $20 por 8 horas trabajadas, es de $960.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio7">
+                    <div class="algorithms__block__info">
+                        <h2>Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. Para cada
+                            pedido, tiene que proporcionar las medidas de la tela en pulgadas, pero ella generalmente
+                            las tiene en metros. Realice un algoritmo para ayudar a
+                            resolver el problema, determinando cuantas pulgadas debe pedir con base en los metros que
+                            requiere. Represéntelo mediante el diagrama de flujo y el pseudocódigo (1 pulgada = 0.0254
+                            m).</h2>
+                        <div>
+                            <br>
+                            function calcularPulgadasPorMetro(cantidadMetros){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;const pulgadasAmetros= 0.0254;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let medidaFinal;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;medidaFinal=(cantidadMetros*1)/pulgadasAmetros;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`La cantidad de pulgadas es de ${medidaFinal.toFixed(3)} por ${cantidadMetros} metros solicitados.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularPulgadasPorMetro(8);
+                        </div>
+                        <p>CONSOLA: La cantidad de pulgadas es de 314.961 por 8 metros solicitados.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio8">
+                    <div class="algorithms__block__info">
+                        <h2>Una empresa importadora desea determinar cuántos dólares puede adquirir con equis cantidad
+                            de dinero peruano </h2>
+                        <div>
+                            <br>
+                            function calcularSolesADolares(cantidadSoles){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;const conversionDolares= 0.2745;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let cantidadFinal;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;cantidadFinal=cantidadSoles*conversionDolares;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`La cantidad de ${cantidadSoles} soles equivale a ${cantidadFinal.toFixed(2)} dolares.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularSolesADolares(300);
+                        </div>
+                        <p>CONSOLA: La cantidad de 300 soles equivale a 82.35 dolares.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio9">
+                    <div class="algorithms__block__info">
+                        <h2>Una empresa que contrata personal requiere determinar la edad de las personas que solicitan
+                            trabajo, pero cuando se les realiza la entrevista sólo se les pregunta el año en que
+                            nacieron </h2>
+                        <div>
+                            <br>
+                            function calcularEdad(añoNac){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;const añoActual = 2021;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let edad;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;edad=añoActual-añoNac;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`Si la persona nació en ${añoNac}, entonces tiene ${edad} años.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularEdad(1998);
+                        </div>
+                        <p>CONSOLA: Si la persona nació en 1998, entonces tiene 23 años.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio10">
+                    <div class="algorithms__block__info">
+                        <h2>Se tiene el nombre y la edad de tres personas. Se desea saber el nombre y la edad de la
+                            persona de menor edad </h2>
+                        <div>
+                            <br>
+                            function conocerEdadyNombre(){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;nombre1='Moises';
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;edad1=23;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;nombre2='Jesus';
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;edad2=27;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;nombre3='Monica';
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;edad3=13;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;if(edad1 < edad2){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;if(edad1 < edad3){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(`La edad menor es de: ${nombre1} con ${edad1}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;else{
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(`La edad menor es de: ${nombre3} con ${edad3}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else if(edad2 < edad3){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log(`La edad menor es de: ${nombre2} con ${edad2}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else{
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log(`La edad menor es de: ${nombre3} con ${edad3}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                conocerEdadyNombre();
+                        </div>
+                        <p>CONSOLA: La edad menor es de: Monica con 13.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio11">
+                    <div class="algorithms__block__info">
+                        <h2>Se les dará un bono por antigüedad a los empleados de una tienda. Si tienen un año, se les
+                            dará $100; si tienen 2 años, $200, y así sucesivamente hasta los 5 años. Para los que tengan
+                            más de 5, el bono será de $1000. Realice un algoritmo y represéntelo ,que permita determinar
+                            el bono que recibirá un trabajador</h2>
+                        <div>
+                            <br>
+                            function calcularBono(añosDeServicio){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let bono;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;if(añosDeServicio==1){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;bono=100;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else if(añosDeServicio==2){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;bono=200;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else if(añosDeServicio==3){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;bono=300;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else if(añosDeServicio==4){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;bono=400;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else if(añosDeServicio==5){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;bono=500;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else{
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;bono=1000;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`Si el trabajador a estado ${añosDeServicio} años trabajando, le corresponde un bono de $${bono}.`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularBono(8);
+                        </div>
+                        <p>CONSOLA: Si el trabajador a estado 8 años trabajando, le corresponde un bono de $1000.</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio12">
+                    <div class="algorithms__block__info">
+                        <h2>Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido en cada uno de los 6 años? Realice el algoritmo y representan la solución, utilizando el ciclo apropiado </h2>
+                        <div>
+                            <br>
+                            function calcularSalario(){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let salario=1500;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;for(let i = 1; i <= 6; i++){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;salario = salario + (salario *.10);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log(`El salario en el año ${i} es $${salario.toFixed(2)}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                            calcularSalario();
+                        </div>
+                        <p>CONSOLA: El salario en el año 1 es $1650.00 <br>
+                            El salario en el año 2 es $1815.00 <br>
+                            El salario en el año 3 es $1996.50 <br>
+                            El salario en el año 4 es $2196.15 <br>
+                            El salario en el año 5 es $2415.77 <br>
+                            El salario en el año 6 es $2657.34</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio13">
+                    <div class="algorithms__block__info">
+                        <h2>Realice un algoritmo para leer las calificaciones de N alumnos y determine el número de aprobados y reprobados </h2>
+                        <div>
+                            <br>
+                            function calcularAprobYReprob(cantAlumnos){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let aprobados = 0;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let reprobados = 0;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let calificacion;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let mostrarCali=[];
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;while(cantAlumnos>0){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;calificacion=Number(prompt('Ingresa la calificación'));
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;if(calificacion>=10.5){
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aprobados = aprobados+1;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;else{
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reprobados = reprobados+1;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;cantAlumnos=cantAlumnos-1;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;mostrarCali[cantAlumnos] = calificacion;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`Las calificaciones son ${mostrarCali}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El total de alumnos aprobados es ${aprobados}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El total de alumnos reprobados es ${reprobados}`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                            calcularAprobYReprob(5);
+                        </div>
+                        <p>CONSOLA: Las calificaciones son 15,20,10,10,20 <br>
+                            El total de alumnos aprobados es 3 <br>
+                            El total de alumnos reprobados es 2</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio14">
+                    <div class="algorithms__block__info">
+                        <h2> Una compañía, fabrica focos de colores (verdes, blancos y rojos). Se desea contabilizar, de un lote de N focos, el número de focos de cada color que hay en existencia </h2>
+                        <div>
+                            <br>
+                            function calcularFocos(n) {
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let color;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let verde = 0;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let blanco = 0;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;let rojo = 0;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;while (n > 0) {
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;color = document.querySelector('input[name=color]:checked').value;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;if (color >= 1 && color <= 3) {
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (color == 1) {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verde = verde + 1;
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if (color == 2) {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blanco = blanco + 1;
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rojo = rojo + 1;
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = n - 1;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;else {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Ingresa un color correcto");
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El total de focos verdes es ${verde}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El total de focos blancos es ${blanco}`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;console.log(`El total de focos rojos es ${rojo}`);
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                calcularFocos(3);
+                        </div>
+                        <p>CONSOLA: El total de focos verdes es 3 <br>
+                            El total de focos blancos es 0<br>
+                            El total de focos rojos es 0</p>
+                    </div>
+                </article>
+                <article class="algorithms__block__article ejercicio15">
+                    <div class="algorithms__block__info">
+                        <h2>Realice un algoritmo para determinar si una persona puede votar con base en su edad en las
+                            próximas elecciones </h2>
+                        <div>
+                            <br>
+                            function conocerSiVota(edad) {
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;const edadApta = 18;
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;if (edad >= edadApta) {
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log(`La persona tiene ${edad} años y puede votar.`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;else {
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log(`La persona tiene ${edad} años y aún no puede votar.`);
+                                <br>
+                                <br>
+                                &nbsp;&nbsp;}
+                                <br>
+                                <br>
+                                }
+                                <br>
+                                <br>
+                                conocerSiVota(15);
+                        </div>
+                        <p>CONSOLA: La persona tiene 15 años y aún no puede votar.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/algoritmos.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+
+</html>
